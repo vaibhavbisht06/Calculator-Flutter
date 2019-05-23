@@ -9,7 +9,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      new Theme(data: null, child: null)
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
@@ -18,6 +17,7 @@ class _HomePageState extends State<HomePage> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new Theme(data: null, child: null),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(hintText: "Number 1"),
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   elevation: 10.0,
                   textColor: Colors.deepOrange,
                   onPressed: (){} ,
-                  color:Colors.black ,
+                  color:Colors.white,
                 )
               ],
             )
