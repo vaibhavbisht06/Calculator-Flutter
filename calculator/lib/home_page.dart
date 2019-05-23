@@ -9,6 +9,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      new Theme(data: null, child: null)
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
@@ -19,13 +20,14 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             new TextField(
               keyboardType: TextInputType.number,
-              decoration: new InputDecoration(
-              hintText: "Number 1"
-              ),
+              decoration: new InputDecoration(hintText: "Number 1"),
+              cursorColor: Colors.greenAccent,
             ),
             new TextField(
               keyboardType: TextInputType.number,
-              decoration: new InputDecoration(hintText: "Number 2"),
+              decoration: new InputDecoration(hintText: "Number 2",fillColor: Colors.deepOrange ),
+              cursorColor: Colors.greenAccent,
+              style: TextStyle(color: Colors.deepOrange),
             ),
             new Padding(padding: const EdgeInsets.only(top: 20.0),),
             new Row(
@@ -34,9 +36,11 @@ class _HomePageState extends State<HomePage> {
                 new RaisedButton(
                   child: new Text("Add"),
                   onPressed: (){} ,
+                  elevation: 10.0,
                 ),new RaisedButton(
                   child: new Text("Sub"),
                   onPressed: (){} ,
+                  elevation: 10.0,
                 )
               ],
             ),
@@ -46,9 +50,16 @@ class _HomePageState extends State<HomePage> {
                 new RaisedButton(
                   child: new Text("Mul"),
                   onPressed: (){} ,
-                ),new RaisedButton(
-                  child: new Text("Div"),
+                  elevation: 10.0,
+
+                ),
+                new RaisedButton(
+                  child: new Text("Div",),
+                  padding: EdgeInsets.all(10.0),
+                  elevation: 10.0,
+                  textColor: Colors.deepOrange,
                   onPressed: (){} ,
+                  color:Colors.black ,
                 )
               ],
             )

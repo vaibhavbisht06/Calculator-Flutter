@@ -24,9 +24,18 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+    #flutter_icons:
+   #   ios: true
+    #  android: true
+    #  image_path_ios: "Images/Calc.png"
+    #  image_path_android: "Images/Calc.png"
+     # adaptive_icon_background: "assets/launcher/background.png"
+    #  adaptive_icon_foreground: "assets/launcher/foreground.png"
 
 
 # For information on the generic Dart part of this file, see the
