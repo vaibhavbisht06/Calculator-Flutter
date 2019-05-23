@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
         title: new Text("Calculator"),
       ),
       body: new Container(
-        padding: EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(40.0),
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -25,9 +25,32 @@ class _HomePageState extends State<HomePage> {
             ),
             new TextField(
               keyboardType: TextInputType.number,
-              decoration: new InputDecoration(
-                  hintText: "Number 2"
-              ),
+              decoration: new InputDecoration(hintText: "Number 2"),
+            ),
+            new Padding(padding: const EdgeInsets.only(top: 20.0),),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text("Add"),
+                  onPressed: (){} ,
+                ),new RaisedButton(
+                  child: new Text("Sub"),
+                  onPressed: (){} ,
+                )
+              ],
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text("Mul"),
+                  onPressed: (){} ,
+                ),new RaisedButton(
+                  child: new Text("Div"),
+                  onPressed: (){} ,
+                )
+              ],
             )
           ],
         )
