@@ -116,6 +116,15 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )
               ],
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new MaterialButton(
+                  padding: EdgeInsets.all(10.0),
+                  child: new Text("Clear"),
+                )
+              ],
             )
           ],
         )
