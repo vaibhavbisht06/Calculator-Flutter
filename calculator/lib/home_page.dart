@@ -17,7 +17,6 @@ class _HomePageState extends State<HomePage> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Theme(data: null, child: null),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(hintText: "Number 1"),
@@ -31,35 +30,53 @@ class _HomePageState extends State<HomePage> {
             ),
             new Padding(padding: const EdgeInsets.only(top: 20.0),),
             new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                new RaisedButton(
-                  child: new Text("Add"),
+                new MaterialButton(
+                  child: new Text("+",style: TextStyle(fontSize: 30.0),),
                   onPressed: (){} ,
                   elevation: 10.0,
-                ),new RaisedButton(
-                  child: new Text("Sub"),
+                  color:Colors.lightGreen,
+                  textColor: Colors.deepOrange,
+                ),
+                new MaterialButton(
+                  child: new Text("-",style: TextStyle(fontSize: 30.0),),
                   onPressed: (){} ,
                   elevation: 10.0,
+                  color:Colors.lightGreen,
                 )
+              ],
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new MaterialButton(
+                  child: new Text("*"),
+                  onPressed: (){} ,
+                  elevation: 10.0,
+                  color:Colors.lightGreen,
+                ),
+                new MaterialButton(
+                  child: new Text("/",style: TextStyle(fontSize: 15.0),),
+                  padding: EdgeInsets.all(10.0),
+                  elevation: 10.0,
+                  textColor: Colors.deepOrange,
+                  onPressed: (){} ,
+                  color:Colors.lightGreen,
+                ),
               ],
             ),
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new RaisedButton(
-                  child: new Text("Mul"),
-                  onPressed: (){} ,
-                  elevation: 10.0,
 
-                ),
-                new RaisedButton(
-                  child: new Text("Div",),
-                  padding: EdgeInsets.all(10.0),
-                  elevation: 10.0,
-                  textColor: Colors.deepOrange,
-                  onPressed: (){} ,
-                  color:Colors.white,
+                new Text(
+                  "Output :",
+                  style: new TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.purple
+                  ),
                 )
               ],
             )

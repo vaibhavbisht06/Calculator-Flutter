@@ -9,7 +9,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "Calculator App",
-      theme: new ThemeData(primarySwatch: Colors.red),
+      theme: new ThemeData(primarySwatch: Colors.blue),
       home: new HomePage(),
     );
   }
