@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       t1.text="0";
       t2.text="0";
+      sum=0;
     });
   }
   @override
