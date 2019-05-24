@@ -33,17 +33,16 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 new MaterialButton(
-                  child: new Text("+",style: TextStyle(fontSize: 30.0),),
+                  child: new Text("+",style: TextStyle(fontSize: 25.0),),
                   onPressed: (){} ,
                   elevation: 10.0,
-                  color:Colors.lightGreen,
-                  textColor: Colors.deepOrange,
+                  color:Colors.greenAccent,
                 ),
                 new MaterialButton(
                   child: new Text("-",style: TextStyle(fontSize: 30.0),),
                   onPressed: (){} ,
                   elevation: 10.0,
-                  color:Colors.lightGreen,
+                  color:Colors.greenAccent,
                 )
               ],
             ),
@@ -51,18 +50,17 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 new MaterialButton(
-                  child: new Text("*"),
+                  child: new Text("*",style: TextStyle(fontSize: 25.0),),
                   onPressed: (){} ,
                   elevation: 10.0,
-                  color:Colors.lightGreen,
+                  color:Colors.greenAccent,
                 ),
                 new MaterialButton(
                   child: new Text("/",style: TextStyle(fontSize: 15.0),),
                   padding: EdgeInsets.all(10.0),
                   elevation: 10.0,
-                  textColor: Colors.deepOrange,
                   onPressed: (){} ,
-                  color:Colors.lightGreen,
+                  color:Colors.greenAccent,
                 ),
               ],
             ),
