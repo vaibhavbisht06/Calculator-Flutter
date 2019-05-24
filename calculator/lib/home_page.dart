@@ -42,6 +42,13 @@ class _HomePageState extends State<HomePage> {
       sum =num1~/num2;
     });
   }
+
+  void doClear(){
+    setState(() {
+      t1.text="0";
+      t2.text="0";
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -68,6 +75,20 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(color: Colors.deepOrange),
             ),
             new Padding(padding: const EdgeInsets.only(top: 20.0),),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+
+                new Text(
+                  "Output :$sum",
+                  style: new TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.purple
+                  ),
+                )
+              ],
+            ),
             new Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
@@ -103,26 +124,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
 
-                new Text(
-                  "Output :$sum",
-                  style: new TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.purple
-                  ),
-                )
-              ],
-            ),
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new MaterialButton(
                   padding: EdgeInsets.all(10.0),
                   child: new Text("Clear"),
+                  elevation: 10.0,
+                  color: Colors.greenAccent,
+                  onPressed: doClear,
                 )
               ],
             )
